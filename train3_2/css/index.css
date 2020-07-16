@@ -1,0 +1,138 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#header{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(169, 207, 212);
+}
+#htext{
+    width: 1200px;
+    margin: auto;
+    /* border: 1px solid gray; */
+}
+#hleft{
+    width: 600px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+#hleft h3{
+    text-align: left;
+    color: white;
+}
+#hleft h3>img{
+    width: 48px; 
+    vertical-align: middle;
+} 
+#hleft h3>span{
+    margin: 0;
+    padding: 0;
+}
+#hright{
+    width: 600px;
+    display: inline-block;
+}
+#hright h3{
+    text-align: right;
+}
+#hright h3>ul>li{
+    list-style: none;
+    display: inline-block;
+}
+#hright h3>ul>li>a{
+    color: white;
+    text-decoration: none;
+}
+#middle{
+    width: 100%;
+    height: 70%;
+}
+#mtext{
+    width: 1200px;
+    margin: auto;
+    padding: 0;
+    /* border: 1px solid gray; */
+}
+#mdchild{
+    width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: center;
+}
+#book{
+    width: 300px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    
+    font-size: 16px;
+}
+#book img{
+    width: 280px;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+}
+#book a{
+    text-decoration: none;
+    color: gray;
+}
+/* #book a>h4{
+    text-align: center;
+} */
+#book h4{
+    margin: 0;
+    padding-bottom: 16px;
+}
+#middle h3{
+    text-align: center;
+}
+#middle h3>a{
+    color: gray;
+}
+#footer{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(169, 207, 212);
+}
+#footer h5{
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 16px;
+}
+#footertext{
+    width: 900px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    color: white;
+}
+#ftext{
+        width: 1200px;
+        margin: auto;
+      padding-top: 36px;
+    }
+#footertext p{
+    text-indent: 2em;
+    font-size: 18px;
+    font-family: serif;
+    font-weight: 600;
+    line-height: 1.5em;
+    text-align:justify;
+}
+#imgbox{
+    width: 300px;
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+}
+#imgbox img{
+    width: 150px;
+    height: 150px;
+}
