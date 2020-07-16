@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于</title>
+    <!-- <script type="test/javascript" src="js/jquery.min.js"></script> -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+
+    <script src="js/baiduMap.js"></script>
+
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div id="head" class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <nav id="idnav" class="navbar navbar-default" role="navigation">
+                        <div id="id1" class="container-fluid"> 
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#example-navbar-collapse">
+                                <span class="sr-only">切换导航</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a id="aa" class="navbar-brand" href="#">三国爱好者企业站</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="index.html">首页</a></li>
+                                <li><a href="main.html">主栏</a></li>
+                                <li><a href="about.html">关于</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        阵营 <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">魏国系列</a></li>
+                                        <li><a href="#">蜀国系列</a></li>
+                                        <li><a href="#">吴国系列</a></li>
+                                        <li><a href="#">群雄系列</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">关于我</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container">
+        <div id="middle" class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12" style="height: 350px;">
+                <div id="baiduMap_box"></div>
+            </div>
+            <div id="info" class="col-md-6 col-sm-6 col-xs-12" >
+                <h3 id="guanyu">关于三国</h3>
+                <p>
+                    三国（220年－280年）是中国汉朝与晋朝之间的一段历史时期，分为曹魏、蜀汉、东吴三个政权。
+                    220年，汉朝丞相曹丕篡汉称帝，定都洛阳，国号“魏”，史称曹魏，汉朝正式结束。221年刘备称帝
+                    ，定都成都，史称蜀汉。229年孙权称帝，定都建邺，国号“吴”，史称东吴。赤壁之战时，曹操被孙
+                    刘联军击败，奠定了三国鼎立的雏型。此后的数十年内，蜀汉诸葛亮、姜维多次率军北伐曹魏，但
+                    始终未能改变三足鼎立的格局。曹魏后期的实权渐被司马懿掌控。263年，曹魏的司马昭发动魏灭蜀
+                    之战，蜀汉灭亡。265年，魏国相国司马炎废魏元帝自立，建国号为“晋”，史称西晋。三国时代正式
+                    结束，中国历史正式进入了晋朝时代。280年，晋灭东吴，统一中国，三国时期彻底结束。
+                </p><br>
+                地址：<a href="address">洛阳一环</a><br>
+                电话：<a href="tel">19999999999</a><br>
+                邮箱：<a href="mailto">999999999@qq.com</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                </div>
+                <div id="footer_img" class="col-md-4 col-sm-4 col-xs-4">
+                    <img src="img/vx.jpg" alt="">
+                </div>
+            </div>
+            <p id="Copy">
+                版权所有 &copy; 长跃
+            </p>
+        </div>
+    </div>
+<script>
+    $(function(){
+        baiduMap('baiduMap_box');
+    });
+</script>
+</body>
+
+</html>

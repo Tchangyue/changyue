@@ -1,0 +1,89 @@
+#header{
+    background-color: rgba(243, 242, 242, 0.795);
+}
+#guanyu{
+    text-align: center;
+    margin: 20px;
+}
+#aa{
+    font-size: 28px;
+}
+.container > #middle > #info >a{
+    font-size: 16px;
+    color: gray;
+}
+#header > .container >#head{
+    padding: 40px;
+}
+#header >.container > .row > div >h3{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+#header > .container > .row > div > ul >li,.container > .row > div > ul{
+    padding: 0;
+    margin:  0;
+    list-style: none;
+    text-align: right;
+ 
+}
+#header > .container > .row > div > ul >li{
+    text-align: center;
+    /* margin: 2rem 0; */
+    display: inline-block;
+}
+#header > .container > .row > div > ul > li >a:hover{
+    background-color: rgb(245, 131, 90);
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+#header > .container > .row > div > ul > li >a{
+    padding: 10px;
+    text-emphasis: none;
+    color: gray;
+}
+#header > .container > #me > div >p{
+    text-align: center;
+    font-size: 24px;
+    color: gray;
+    padding-bottom: 15px;
+}
+.container > #middle{
+    padding: 40px;
+}
+.container > .row > #info >p{
+    text-indent: 2em;
+    text-align: justify;
+}
+#idnav{
+    background-color: rgba(243, 242, 242, 0.795);
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+    background-color: rgb(204, 199, 199);
+    padding: 20px;
+}
+#footer > .container > .row > #footer_img > img{
+    width: 50%;
+    text-align: center;
+}
+#footer > .container > p{
+    text-align: center;
+    margin: 0;
+   padding-top: 20px;
+}

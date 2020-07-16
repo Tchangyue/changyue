@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于</title>
+    <!-- <script type="test/javascript" src="js/jquery.min.js"></script> -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+
+    <script src="js/baiduMap.js"></script>
+    <link rel="stylesheet" href="css/xiangqing.css">
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div id="head" class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <nav id="idnav" class="navbar navbar-default" role="navigation">
+                        <div id="id1" class="container-fluid"> 
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#example-navbar-collapse">
+                                <span class="sr-only">切换导航</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a id="aa" class="navbar-brand" href="#">三国爱好者企业站</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="index.html">首页</a></li>
+                                <li><a href="main.html">主栏</a></li>
+                                <li><a href="about.html">关于</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        阵营 <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">魏国系列</a></li>
+                                        <li><a href="#">蜀国系列</a></li>
+                                        <li><a href="#">吴国系列</a></li>
+                                        <li><a href="#">群雄系列</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">关于我</a></li>                                       
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  
+                </div>
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                    <h4 id="news">详情页面 <span id="new">猛将！</span></h4>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p id="ice">东汉末年，朝纲混乱。宫廷内部，宦官与外戚的斗争就像凶恶的病魔一般，幼小的皇帝只能作为傀儡</p>
+                
+            </div>
+        </div><br><br>
+    </div><br>
+    <div class="container">
+        <div class="row">
+            <div id="img6" class="col-md-12 col-sm-12 col-xs-12">
+                <img src="img/sanguo1.jpg" alt="">
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <p>
+                 <p id="p1">东汉末年，朝纲混乱。宫廷内部，宦官与外戚的斗争就像凶恶的病魔一般，幼小的皇帝只能作为傀儡，而拥兵自重的地方诸侯也在急剧地扩张各自的军事力量。在民间，天灾连年，苛政横行，人民也生活在水深火热之中，延续了四百多年的汉帝国政权岌岌可危。来势汹涌的黄巾军农民起义撼动社稷，虽然起义在爆发后第八个月即告平息，但积重难返的汉帝国却并没有重获生机。为了彻底剿灭宦官势力，出自宦官世家的袁绍（许文广饰）和曹操（陈建斌饰）在混乱中对宦官进行了血腥屠杀，袁绍还召请凉州军阀董卓（吕晓禾饰）进京
+                    帮助进行剿灭宦官。这一“引狼入室”的计划虽然遭到更有智谋的曹操的坚决反对，但袁绍依然一意孤行。</p> 
+                 
+                </p>
+            </div>
+        </div>
+       
+    </div>
+<br><br>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                </div>
+                <div id="footer_img" class="col-md-4 col-sm-4 col-xs-4">
+                    <img src="img/vx.jpg" alt="">
+                </div>
+            </div>
+            <p id="Copy">
+                版权所有 &copy; 长跃
+            </p>
+        </div>
+    </div>
+
+</body>
+<script>
+    // 传入参数
+// fmt  时间格式  String
+// date  被格式化的时间  Date
+function dateFormat(fmt, date) {
+    // 给定默认格式和默认为当前时间
+    let _fmt = (fmt == null || fmt == "" ? "YYYY-mm-dd HH:MM:SS" : fmt);
+    let _date = (date == null ? new Date() : date)
+    let ret;
+    const opt = {
+        "Y+": _date.getFullYear().toString(),        // 年
+        "m+": (_date.getMonth() + 1).toString(),     // 月
+        "d+": _date.getDate().toString(),            // 日
+        "H+": _date.getHours().toString(),           // 时
+        "M+": _date.getMinutes().toString(),         // 分
+        "S+": _date.getSeconds().toString()          // 秒
+        // 有其他格式化字符需求可以继续添加，必须转化成字符串
+    };
+    for (let k in opt) {
+        ret = new RegExp("(" + k + ")").exec(_fmt);
+        if (ret) {
+            _fmt = _fmt.replace(ret[1], (ret[1].length == 1) ? (opt[k]) : (opt[k].padStart(ret[1].length, "0")))
+        };
+    };
+    return _fmt;
+}
+
+// 传入参数  
+//  where  元素id     String
+//  time   每次执行间隔时间（单位毫秒 ms)   String 
+function timing(where,time) {
+    if (where == null || where == "" ) {
+        return console.log("需指定元素！");
+    }
+    let _where = document.getElementById(where);
+    let _time = time == null || time == "" ? "1000" : time;
+    setInterval(function(){_where.innerText = dateFormat()},time);
+}
+
+$(function () {
+            timing('time')
+        })
+</script>
+</html>

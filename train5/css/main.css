@@ -1,0 +1,74 @@
+#header{
+    background-color: rgba(243, 242, 242, 0.795);
+}
+#aa{
+    font-size: 28px;
+}
+#id1{
+    margin-top: 30px;
+}
+#idnav{
+    background-color: rgba(243, 242, 242, 0.795);
+    border: none;
+}
+#hrr{
+    border: 10px solid black;
+    width: 100%;
+    border-radius: 10px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#news{
+   padding-left: 20px;
+   
+}
+#new{
+    color: red;
+    font-weight: bolder;
+}
+
+.container > #middle > div >img{
+    width: 100%;
+}
+#pp1,#pp2,#pp3,#pp4,#pp5,#pp6,#pp7,#pp8{
+    text-align: justify;
+    line-height: 1.5em;
+    text-indent: 2em;
+    font-size: 8px;
+}
+#id11,#id22,#id33,#id44,#id55,#id66,#id77,#id88{
+    padding: 10px;
+}
+#fenye{
+    text-align: center;
+}
+#footer{
+    background-color: rgb(204, 199, 199);
+    padding: 20px;
+}
+#footer > .container > .row > #footer_img > img{
+    width: 50%;
+    text-align: center;
+}
+#Copy{
+    text-align: center;
+    margin: 0;
+   padding-top: 20px;
+}
+@media screen and (min-width: 1200px){
+    #pp1,#pp2,#pp3,#pp4,#pp5,#pp6,#pp7,#pp8{
+        font-size: 14px;
+    }
+}
+ 
+@media screen and (max-width: 1199px) and (min-width:970px){
+    #pp1,#pp2,#pp3,#pp4,#pp5,#pp6,#pp7,#pp8{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 969px) and (min-width:420px){
+    #pp1,#pp2,#pp3,#pp4,#pp5,#pp6,#pp7,#pp8{
+        font-size: 8px;
+    }
+} 

@@ -1,0 +1,56 @@
+#header{
+    background-color: rgba(243, 242, 242, 0.795);
+}
+#aa{
+    font-size: 28px;
+}
+#id1{
+    margin-top: 30px;
+}
+#idnav{
+    background-color: rgba(243, 242, 242, 0.795);
+    border: none;
+}
+#hrr{
+    border: 10px solid black;
+    width: 100%;
+    border-radius: 10px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#news{
+    padding-left: 20px;
+    
+ }
+ #new{
+     color: red;
+     font-weight: bolder;
+ }
+#ice{
+    margin-left: 20px;
+}
+#img6{
+    text-align: center;
+}
+#p1,#p2,#p3,#p4{
+    text-align: justify;
+    line-height: 2em;
+    text-indent: 2em;
+}
+#time{
+    margin-left: 20px;
+}
+#footer{
+    background-color: rgb(204, 199, 199);
+    padding: 20px;
+}
+#footer > .container > .row > #footer_img > img{
+    width: 50%;
+    text-align: center;
+}
+#Copy{
+    text-align: center;
+    margin: 0;
+   padding-top: 20px;
+}
