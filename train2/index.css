@@ -1,0 +1,85 @@
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 微软雅黑;
+}
+#id1{
+    width: 100%;
+    height: 15%;
+    border: 1px solid gray;
+    background-color:rgb(43, 43, 83);
+    color: white;
+}
+#id2{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    
+}
+#id3{
+   width: 20%; 
+   height: 100%;
+    float: left;
+    background-color: rgb(227, 227, 235);
+}
+#id4{
+    width: 79%;
+    height: 100%;
+    border-left: 1px solid rgb(226, 226, 241);
+    float: left;
+    
+}
+#id5{
+    width: 100%;
+    height: 5%;
+    border: 1px solid gray;
+    background-color:rgb(43, 43, 83);
+    color: white;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+a{
+    color: gray;
+   text-decoration: none;
+}
+p{
+    text-indent: 2em;
+}
+#imgbox{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    text-align: center;
+    
+}
+img{
+    width: 600px;
+    height: 400px;
+}
+
+#container { width: 600px; height: 400px;
+    overflow: hidden; position: relative; left: 200px;}
+    #list { width: 4200px; height: 400px;
+    position: absolute; z-index: 1;}
+    #list img{ float: left;}
+    #buttons { position: absolute; height: 10px; width: 100px;
+    z-index: 2; bottom: 20px; left: 250px;}
+    #buttons span { cursor: pointer; float: left; border: 1px solid #fff;
+    width: 10px; height: 10px; border-radius: 50%; background: #333; margin-right: 5px;}
+    #buttons .on { background: orangered;}
+    .arrow{cursor: pointer;display: none;line-height: 39px;
+    text-align: center;font-size: 36px;font-weight: bold;
+    width: 40px;height: 40px;position: absolute;
+    z-index: 2;top: 180px;background-color: rgba(0,0,0,.3);color: #fff;}
+    .arrow:hover{background-color: rgba(0,0,0,.7);}
+    #container:hover .arrow{display: block;}
+    #prev{left: 20px;}
+    #next{right: 20px;} 

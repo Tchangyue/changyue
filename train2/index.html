@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实训第二次作业</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript">		
+        window.onload = function () {
+        var container = document.getElementById('container');
+        var list = document.getElementById('list');
+        var buttons = document.getElementById('buttons').getElementsByTagName('span');
+        var prev = document.getElementById('prev');
+        var next = document.getElementById('next');
+        var index = 1;
+        var len = 5;
+        var animated = false;
+        var interval = 3000;
+        var timer;
+        function animate (offset) {
+            if (offset == 0) {
+                return;
+            }
+            animated = true;
+            var time = 300;
+            var inteval = 10;
+            var speed = offset/(time/inteval);
+            var left = parseInt(list.style.left) + offset;
+            var go = function (){
+                if ( (speed > 0 && parseInt(list.style.left) < left) || (speed < 0 && parseInt(list.style.left) > left)) {
+                    list.style.left = parseInt(list.style.left) + speed + 'px';
+                    setTimeout(go, inteval);
+                }
+                else {
+                    list.style.left = left + 'px';
+                    if(left>-200){
+                        list.style.left = -600 * len + 'px';
+                    }
+                    if(left<(-600 * len)) {
+                        list.style.left = '-600px';
+                    }
+                    animated = false;
+                }
+            }
+            go();
+        }
+        function showButton() {
+            for (var i = 0; i < buttons.length ; i++) {
+                if( buttons[i].className == 'on'){
+                    buttons[i].className = '';
+                    break;
+                }
+            }
+            buttons[index - 1].className = 'on';
+        }
+        function play() {
+            timer = setTimeout(function () {
+                next.onclick();
+                play();
+            }, interval);
+        }
+        function stop() {
+            clearTimeout(timer);
+        }
+        next.onclick = function () {
+            if (animated) {
+                return;
+            }
+            if (index == 5) {
+                index = 1;
+            }
+            else {
+                index += 1;
+            }
+            animate(-600);
+            showButton();
+        }
+        prev.onclick = function () {
+            if (animated) {
+                return;
+            }
+            if (index == 1) {
+                index = 5;
+            }
+            else {
+                index -= 1;
+            }
+            animate(600);
+            showButton();
+        }
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].onclick = function () {
+                if (animated) {
+                    return;
+                }
+                if(this.className == 'on') {
+                    return;
+                }
+                var myIndex = parseInt(this.getAttribute('index'));
+                var offset = -600 * (myIndex - index);
+                animate(offset);
+                index = myIndex;
+                showButton();
+            }
+        }
+        container.onmouseover = stop;
+        container.onmouseout = play;
+        play();
+    }
+    </script>
+</head>
+<body>
+    <div id="id1"><br>
+        <h1>嘿，欢迎来到流浪客咖啡小屋！</h1><br>
+    </div>
+    <div id="id2">
+        <div id="id3">
+            <h2>这是我的菜单</h2>
+            <p>
+            <ul>
+                <li>咖啡
+                <ul>
+                    
+                    <li><a href="">猫屎咖啡</a></li>
+                    <li><a href="">香草拿铁</a></li>
+                    <li><a href="">卡布奇诺</a></li>
+                    <li><a href="">焦糖咖啡</a></li>
+                </ul>
+                </li>
+                <li>奶茶
+                    <ul>
+                        <li><a href="">珍珠烤奶</a></li>
+                        <li><a href="">龙珠奶绿</a></li>
+                        <li><a href="">瑶瑶奶昔</a></li>
+                        <li><a href="">瑶瑶圣代</a></li>
+                    </ul>
+                </li>
+            </ul></p>
+            <br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br>
+            <br><br>
+        </div>
+        <div id="id4">
+            <h2>这是我的咖啡详情介绍</h2>
+            <div id="imgbox">
+               <!-- <img class="img-slide img" src="img/1.jpg" alt="img1">
+                 <img class="img-slide img" src="img/2.png" alt="img2">
+                <img class="img-slide img" src="img/3.jpg" alt="img3">
+                <img class="img-slide img" src="img/4.jpg" alt="img4"> -->
+                <div id="container">
+                    <div id="list" style="left: -600px;">
+                        <img src="img/1.jpg" alt="img1">
+                        <img src="img/2.png" alt="img2">
+                        <img src="img/3.jpg" alt="img3">
+                        <img src="img/4.jpg" alt="img4">
+                        <img src="img/1.jpg" alt="img1">
+                        <img src="img/2.png" alt="img2">
+                    </div>
+                    <div id="buttons">
+                        <span index="1" class="on"></span>
+                        <span index="2"></span>
+                        <span index="3"></span>
+                        <span index="4"></span>
+                        <span index="5"></span>
+                    </div>
+                    <a href="javascript:;" class="arrow" id="prev">&lt;</a>
+                    <a href="javascript:;" class="arrow" id="next">&gt;</a>
+                </div>
+            </div>
+            <h4 style="text-indent: 2em;">猫屎咖啡简介</h4>
+            <p>
+                麝香猫咖啡（Kopi Luwak），又称猫屎咖啡，它是由麝香猫在吃完咖啡果后把咖啡豆原封不动的排出，
+                人们把它的粪便中的咖啡豆提取出来后进行加工而成。
+            <p> 
+                麝香猫咖啡原产于印度尼西亚，是目前世界上最贵的咖啡之一，每磅的价格高达几百美元。
+                麝香猫吃下成熟的咖啡果实，经过消化系统排出体外后，由于经过胃的发酵，产出的咖啡别有一番滋味，成为国际市场上的抢手货。
+            </p> 
+            <p>
+                麝香猫咖啡，产于印尼。18 世纪初，荷兰人在印尼殖民地苏门答腊和爪哇岛一带建立了咖啡种植园，
+                并且禁止当地人采撷和食用自己种植的咖啡果子。印尼当地人无意中发现麝香猫爱吃这些咖啡果子，并且会在拉大便的时候把豆子原封不动的排出来。
+            </p> 
+            <p> 
+                麝香猫只会挑最熟最甜的咖啡豆食用，这本身就是一种自然筛选，其次，当地人发现这些豆子经过猫咪胃的发酵，
+                产出的咖啡比普通的更好喝了。香醇可口的猫屎咖啡渐渐声名远扬，成为国际市场上的抢手货。
+            </p>
+            </p>
+            <br>
+        </div>
+    </div>
+    <div id="id5"><h5>版权所有@长跃的咖啡小屋</h5></div>
+</body>
+</html>
