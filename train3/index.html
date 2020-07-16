@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课堂小作业</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        function $(id){
+        return document.getElementById(id)
+        }
+        function getHeight() {
+            if ($("left").offsetHeight>=$("right").offsetHeight){
+             $("right").style.height=$("left").offsetHeight + "px";
+         }
+            else{
+             $("left").style.height=$("right").offsetHeight + "px";
+        }  
+    }
+        window.onload = function() {
+             getHeight();
+    }
+    </script>
+</head>
+<body>
+    <div>
+        <div id="header">
+            <h1 style="color: white; text-align: center;padding: 48px;margin: 0;">流浪的人儿啊，欢迎回家！</h1>
+        </div>
+        <div id="left">
+            <h3 style="text-align: center;">流浪客的菜单栏</h3>
+            <ul>
+                <li><a href="2.html" target="ifname">牛奶</a></li>
+                <li><a href="1.html" target="ifname">咖啡</a></li>
+                <li><a href="3.html" target="ifname">冰淇淋</a></li>
+                <li><a href="2.html" target="ifname">摇摇奶昔</a></li>
+                <li style="padding-bottom: 1700px;"><a href="1.html" target="ifname">黑糖玛奇朵</a></li>
+            </ul>
+            
+        </div>
+        <div id="right" >
+            <!-- <h3 style="text-align: center;">流浪客专属</h3> -->
+           <iframe src="1.html" frameborder="0" name="ifname" frameborder="0" scrolling="auto" ></iframe>
+
+        </div>
+
+        <div id="footer">
+            <h5 style="color: white; text-align: center;padding: 24px;margin: 0;">版权所有 &copy; 长跃 </h5>
+        </div>
+    </div>
+
+</body>
+</html>
